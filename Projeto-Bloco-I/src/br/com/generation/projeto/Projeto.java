@@ -39,10 +39,13 @@ public class Projeto {
 				+ "no jogo gera uma consequ�ncia, seja boa ou ruim!");
 
 		JOptionPane.showMessageDialog(null, "Bom, já que entendeu, vamos come�ar!");
-
+		
+		do {
 		nomeMulher = JOptionPane.showInputDialog("Digite o nome da Protagonista para "
 				+ "iniciar o jogo interativo:");
-
+		}
+		while(nomeMulher == null || nomeMulher.length() < 1);
+		
 		// Escolha do caminho
 		JOptionPane.showMessageDialog(null, nomeMulher + " acordou para ir ao trabalho.");
 		String mensagem;
