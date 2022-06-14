@@ -2,22 +2,21 @@ package br.com.generation.projeto;
 
 import javax.swing.JOptionPane;
 
-public class metodo02{
+public class metodo02 {
 
-	public static void metodo02(String nome) {
+	public static void metodo03(String nome) {
 		
-		int opcao1;
+		int opcao2;
 		
 		JOptionPane.showMessageDialog(null, "Escolha as opção a seguir");
 
-		opcao1 = Integer.parseInt(JOptionPane.showInputDialog("1 - Os dois desceram do carro e se acertaram sobre o problema acontecido, " + nome + " deu" + " seu número e se prontificou a chamar o seguro.\n\n" + "O outro funcionário a tranquilizou dizendo: acidentes acontecem!\n\n" + "2 - O funcionário sai do carro bravo," + nome + " Dizendo as seguintes palavra: tinha que ser mulher para não saber dirigir!\n\n" + nome + " sentiu medo por trabalhar no mesmo local que este homem, também se sentiu frustrada por ter cometido esse deslize."));
+		opcao2 = Integer.parseInt(JOptionPane.showInputDialog("1 - Foi ao trabalho sem intercorrências.\n2 - No ônibus percebeu alguns olhares por conta de sua roupa e se sentiu desconfortável."));
 
-		JOptionPane.showMessageDialog(null, "Por conta do ocorrido " + nome + " acabou chegando atrasada para uma reunião, explicou toda a situação e por fim se desculpou pelo atraso.");
+		JOptionPane.showMessageDialog(null, nome + " chegou na empresa e foi ao banheiro se trocar, avisando a todos que por conta de seus compromissos tinha acordado atrasada");
 		
-		opcao1 = Integer.parseInt(JOptionPane.showInputDialog("1 - A equipe entendeu o ocorrido, perguntando se estava tudo bem, e a reunião prosseguiu normalmente.\n2 - " + nome + " ouviu piadas de mau gosto sobre o ocorrido, sentiu-se constrangida, mas como já havia se atrasado simplesmente sentou e aguardou a reunião prosseguir."));
+		opcao2 = Integer.parseInt(JOptionPane.showInputDialog("1 - Seus colegas de trabalho compreenderam o motivo, estão todos sobrecarregados, então imprevistos podem ocorrer.\n2 - Seus colegas de trabalho não acreditaram em suas palavras e acham que aquilo foi uma falta de comprometimento com as regras da empresa."));
 
-		JOptionPane.showMessageDialog(null, "Ainda um pouco estressada após o ocorrido no início do dia " + nome + " optou por comer sozinha no refeitório, não estava com muita vontade de socializar.");
+		JOptionPane.showMessageDialog(null, "Na reunião " + nome + " traz uma proposta para o projeto.");
 
 	}
-
 }

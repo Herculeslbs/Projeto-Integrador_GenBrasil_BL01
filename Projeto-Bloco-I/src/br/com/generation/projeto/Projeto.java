@@ -26,19 +26,17 @@ public class Projeto{
 			
 			JOptionPane.showMessageDialog(null, m1 + " Se arruma, sai de casa e dirige até o trabalho. No estacionamento acidentalmente encosta no carro de um funcionário que estava chegando.");
 			
-			metodo02.metodo02(m1);
+			metodo01.metodo02(m1);
 		}
 
 		else if (opcao1 == 2) {
 			JOptionPane.showMessageDialog(null, m1 + " Ficou preocupada em se atrasar para o trabalho, então, colocou rapidamente um shorts e uma blusa que encontrou no armário, e levar a roupa para se trocar no local para evitar o atraso.");
 		
-			metodo03.metodo03(m1);
+			metodo02.metodo03(m1);
 		}
 
 		else {
 			System.out.println("Opção inválida");
-			
-			metodo01.metodo01(m1);
 		}
 
 	}
