@@ -1,7 +1,5 @@
 package br.com.generation.projeto;
 
-import java.util.Scanner;
-
 import javax.swing.JOptionPane;
 
 public class Projeto {
@@ -10,9 +8,9 @@ public class Projeto {
 
 		String m1 = null;
 
-		int opcao1, opcao2;
+		int opcao1;
 
-		m1 = JOptionPane.showInputDialog("Digite o nome da Protagonista para iniciar o jogo interativo");
+		m1 = JOptionPane.showInputDialog("Digite o nome da Protagonista para iniciar o jogo interativo:");
 
 		JOptionPane.showMessageDialog(null, m1 + " acordou para ir ao trabalho.");
 
@@ -33,8 +31,7 @@ public class Projeto {
 
 		JOptionPane.showMessageDialog(null, "Escolha a opção a seguir");
 		
-		opcao2 = Integer.parseInt(JOptionPane.showInputDialog("1 - Os dois desceram do carro e se acertaram sobre o problema acontecido, " + m1 + " deu" + " seu número e se prontificou a chamar o seguro.\n\n" + "O outro funcionário a tranquilizou dizendo: acidentes acontecem!\n\n" + "2 - O funcionário sai do carro bravo," + m1 + " Dizendo as seguintes palavra: tinha que ser mulher para não saber dirigir!\n\n" + m1 + " sentiu medo por trabalhar no mesmo local que este homem, também se sentiu frustrada " + "por ter cometido esse deslize."));
-		
+		opcao1 = Integer.parseInt(JOptionPane.showInputDialog("1 - Os dois desceram do carro e se acertaram sobre o problema acontecido, " + m1 + " deu" + " seu número e se prontificou a chamar o seguro.\n\n" + "O outro funcionário a tranquilizou dizendo: acidentes acontecem!\n\n" + "2 - O funcionário sai do carro bravo," + m1 + " Dizendo as seguintes palavra: tinha que ser mulher para não saber dirigir!\n\n" + m1 + " sentiu medo por trabalhar no mesmo local que este homem, também se sentiu frustrada " + "por ter cometido esse deslize."));
 		
 	}
 
