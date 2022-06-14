@@ -7,7 +7,7 @@ public class Formulario {
 	public static void main(String[] args) {
 		
 		
-		String opiniaoM;
+		String opiniaoM, feedback;
 		int check1, check2;
 		boolean abuso,superior=false,salario=false;
 		do {	
@@ -20,7 +20,7 @@ public class Formulario {
 					
 	if(check1 == 1) {
 		abuso = true;
-		int sup =Integer.parseInt(JOptionPane.showInputDialog("Esse abuso veio de um superior?\n\nDigite: \n\n(1) para sim\n\\n(2) para não\n\n"));
+		int sup =Integer.parseInt(JOptionPane.showInputDialog("Esse abuso veio de um superior?\n\nDigite: \n\n(1) para sim\n\n(2) para não\n\n"));
 		if (sup==1) {
 			superior=true;
 		} else {
@@ -34,7 +34,7 @@ public class Formulario {
 	check2 = Integer.parseInt(JOptionPane.showInputDialog("De acordo com um estudo do IBGE as mulheres ganharam em média 20,50%"
 			+ "\nmenos do que os homens no 4º trimestre de 2021.\r\n"
 			+ "\r\n"
-			+ "	Você recebe menos que um colega de trabalho homem na mesma função?"));
+			+ "	Você recebe menos que um colega de trabalho homem na mesma função?\n\nDigite: \n\n(1) para sim\n\n(2) para não\n\n"));
 	if(check2==1) {
 		salario=true;
 	}else {
@@ -43,9 +43,9 @@ public class Formulario {
 	while(check2 != 1 && check2 != 2);
 	
 	opiniaoM = JOptionPane.showInputDialog("O que você acha que pode ser feito para minimizar o abuso contra a mulher no local de trabalho? ");
-	//System.out.println("Resposta 1: " + check1 + "\nResposta 2: " + check2);
+	
 	if (abuso == true) {
-		JOptionPane.showMessageDialog(null, "Algumas atitudes são importantes para fazer cessar o assédio e evitar que ele se propague e se agrave no ambiente de trabalho:\r\n"
+		feedback = JOptionPane.showInputDialog(null, "Algumas atitudes são importantes para fazer cessar o assédio e evitar que ele se propague e se agrave no ambiente de trabalho:\r\n"
 				+ " Dizer, claramente, não ao assediador; \r\n"
 				+ "Evitar permanecer sozinha (o) no mesmo local que o (a) assediador (a); \r\n"
 				+ "Anotar, com detalhes, todas as abordagens de caráter sexual sofridas: dia, mês, ano, hora, local ou setor, nome do (a) agressor (a), colegas que testemunharam os fatos, conteúdo das conversas e o que mais achar necessário; \r\n"
@@ -55,8 +55,9 @@ public class Formulario {
 				+ "Denunciar aos órgãos de proteção e defesa dos direitos das mulheres ou dos trabalhadores, inclusive o sindicato profissional; \r\n"
 				+ "Comunicar aos superiores hierárquicos, bem como informar por meio dos canais internos da empresa, tais como ouvidoria, comitês de éticas ou outros meios idôneos disponíveis; \r\n"
 				+ "Buscar apoio junto a familiares, amigos e colegas; \r\n"
-				+ "Relatar o fato perante a Cipa (Comissão Interna de Prevenção de Acidentes) e ao SESMT (Serviço Especializado em Engenharia de Segurança e em Medicina do Trabalho)");
-	} else {
+				+ "Relatar o fato perante a Cipa (Comissão Interna de Prevenção de Acidentes) e ao SESMT (Serviço Especializado em Engenharia de Segurança e em Medicina do Trabalho)\n\nObrigado por jogar!\n\nSe tiver algum comentário para a equipe de desenvolvimento, "
+				+ "sobre algo que faltou no jogo, por favor comente abaixo e dê ok. Caso contrário é só cancelar.");
+	} else { 
 		
 	}
 	
