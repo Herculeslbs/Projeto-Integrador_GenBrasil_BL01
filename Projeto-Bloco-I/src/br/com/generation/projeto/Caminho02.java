@@ -3,6 +3,20 @@ package br.com.generation.projeto;
 import javax.swing.JOptionPane;
 
 public class Caminho02 {
+	
+	static Contabilizar escolhas = new Contabilizar();
+
+	public static void contabilizar(int escolhido)
+	{
+		if (escolhido == 1)
+		{
+			escolhas.somarEscolhas01();
+		}
+		else
+		{
+			escolhas.somarEscolhas02();
+		}
+	}
 
 	public static void situacao01(String nome) {
 
@@ -11,7 +25,7 @@ public class Caminho02 {
 		JOptionPane.showMessageDialog(null, "Escolha as op��es a seguir");
 
 		opcao2 = Integer.parseInt(JOptionPane.showInputDialog(
-				"1 - Foi ao trabalho sem intercorr�ncias.\n2 - No �nibus percebeu alguns olhares por conta de sua roupa e se sentiu desconfort�vel."));
+				"1 - Foi ao trabalho sem intercorrências.\n2 - No ônibus percebeu alguns olhares por conta de sua roupa e se sentiu desconfort�vel."));
 
 		JOptionPane.showMessageDialog(null, nome
 				+ " chegou na empresa e foi ao banheiro se trocar, avisando a todos que por conta de seus compromissos tinha acordado atrasada");
