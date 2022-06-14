@@ -112,8 +112,7 @@ public class Caminho01 {
 		JOptionPane.showMessageDialog(null, "O que você imagina que aconteceria a seguir normalmente");
 
 		do {
-			escolha07 = Integer.parseInt(JOptionPane.showInputDialog("1 - " + nome
-					+ " e o estagiário resolvem o bug rapidamente e já podem ir embora.\n2 - O estagiário achou muito complicado e achou melhor procurar outro programador para ajudá-lo."));
+			escolha07 = Integer.parseInt(JOptionPane.showInputDialog("1 - " + Nome + " e seu colega vão conversando sobre o dia. Foi um viagem agradável.\n2 - Durante uma conversa sobre o dia, o colega de trabalho xaveca " + nome + ", e ela se irrita, pois ela só queria demonstrar um gesto de amizade."));
 
 		} while (escolha07 != 1 && escolha07 != 2);
 		contabilizar(escolha07);
