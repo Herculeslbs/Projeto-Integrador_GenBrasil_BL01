@@ -2,37 +2,45 @@ package br.com.generation.projeto;
 
 import javax.swing.JOptionPane;
 
-public class Projeto {
+public class Projeto{
 
 	public static void main(String[] args) {
 
-		String m1 = null;
+		String m1;
 
 		int opcao1;
+		
+		JOptionPane.showMessageDialog(null, "Neste Projeto iremos apresentar um Game interativo vivendo o dia a dia de uma mulher desenvolvedora!");
 
+		JOptionPane.showMessageDialog(null, "O jogo é simples, tudo se baseia em escolhas, e cada escolha feita no jogo gera uma consequência, seja boa ou ruim!");
+		
+		JOptionPane.showMessageDialog(null, "Bom, já que entendeu, vamos começar!");
+		
 		m1 = JOptionPane.showInputDialog("Digite o nome da Protagonista para iniciar o jogo interativo:");
 
-		JOptionPane.showMessageDialog(null, m1 + " acordou para ir ao trabalho.");
+		JOptionPane.showMessageDialog(null, m1 + " Acordou para ir ao trabalho.");
 
 		opcao1 = Integer.parseInt(JOptionPane.showInputDialog("Agora vamos começar com as escolhas:\n1 - Acordou na hora | 2 - Acordou atrasada"));
 
 		if (opcao1 == 1) {
 			
-			JOptionPane.showMessageDialog(null, m1 + " se arruma, sai de casa e dirige até o trabalho. No estacionamento acidentalmente encosta no carro de um funcionário que estava chegando");
+			JOptionPane.showMessageDialog(null, m1 + " Se arruma, sai de casa e dirige até o trabalho. No estacionamento acidentalmente encosta no carro de um funcionário que estava chegando.");
+			
+			metodo02.metodo02(m1);
 		}
 
 		else if (opcao1 == 2) {
-			JOptionPane.showMessageDialog(null, m1 + " ficou preocupada em se atrasar para o trabalho, então, colocou rapidamente um"+ " shorts e uma blusa que encontrou e resolveu se trocar no trabalho.");
+			JOptionPane.showMessageDialog(null, m1 + " Ficou preocupada em se atrasar para o trabalho, então, colocou rapidamente um shorts e uma blusa que encontrou no armário, e levar a roupa para se trocar no local para evitar o atraso.");
+		
+			metodo03.metodo03(m1);
 		}
 
 		else {
 			System.out.println("Opção inválida");
+			
+			metodo01.metodo01(m1);
 		}
 
-		JOptionPane.showMessageDialog(null, "Escolha a opção a seguir");
-		
-		opcao1 = Integer.parseInt(JOptionPane.showInputDialog("1 - Os dois desceram do carro e se acertaram sobre o problema acontecido, " + m1 + " deu" + " seu número e se prontificou a chamar o seguro.\n\n" + "O outro funcionário a tranquilizou dizendo: acidentes acontecem!\n\n" + "2 - O funcionário sai do carro bravo," + m1 + " Dizendo as seguintes palavra: tinha que ser mulher para não saber dirigir!\n\n" + m1 + " sentiu medo por trabalhar no mesmo local que este homem, também se sentiu frustrada " + "por ter cometido esse deslize."));
-		
 	}
-
+	
 }
