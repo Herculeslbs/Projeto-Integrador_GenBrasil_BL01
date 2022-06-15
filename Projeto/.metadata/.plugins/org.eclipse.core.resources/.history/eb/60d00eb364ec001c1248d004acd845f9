@@ -36,10 +36,8 @@ public class Main {
 				+ "a dia de uma mulher desenvolvedora!");
 		
 		JOptionPane.showMessageDialog(null,
-				"O jogo é simples, tudo se baseia em possibilidades de situações que a "
-				+ "protagonista precisa enfrentar no seu dia a dia de trabalho."
-				+ "O jogo simula uma consequência, seja boa ou ruim, e você deve refletir "
-				+ "qual a mais provável de acontecer com uma desenvolvedora...");
+				"O jogo é simples, tudo se baseia em escolhas, e cada escolha feita "
+				+ "no jogo gera uma consequência, seja boa ou ruim!");
 
 		JOptionPane.showMessageDialog(null, "Bom, já que entendeu, vamos começar!");
 		
