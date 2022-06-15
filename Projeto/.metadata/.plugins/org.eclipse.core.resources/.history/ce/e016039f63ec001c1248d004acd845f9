@@ -84,8 +84,7 @@ public class Formulario01 {
 							+ "Relatar o fato perante a Cipa (Comissão Interna de Prevenção de Acidentes) e ao SESMT "
 							+ "(Serviço Especializado em Engenharia de Segurança e em Medicina do Trabalho)\n\nObrigado por "
 							+ "jogar!\n\nSe tiver algum comentário para a equipe de desenvolvimento, "
-							+ "sobre algo que faltou no jogo, por favor comente abaixo e dê ok. Caso contrário, clique apenas"
-							+ "no Enter.");
+							+ "sobre algo que faltou no jogo, por favor comente abaixo e dê ok. Caso contrário é só cancelar.");
 		}
 		
 		Final.mensagemFinal(pontuacao);

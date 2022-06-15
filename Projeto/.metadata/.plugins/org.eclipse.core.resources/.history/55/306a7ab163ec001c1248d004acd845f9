@@ -138,8 +138,7 @@ public class Formulario02 {
 							+ "canais internos da empresa, tais como ouvidoria,\n "
 							+ "comitês de éticas ou outros meios idôneos disponíveis\r\n"
 							+ "Se tiver algum comentário para a equipe de desenvolvimento, sobre algo "
-							+ "que faltou no jogo, por favor comente abaixo e dê ok. Caso contrário, "
-							+ "clique apenas no Enter");
+							+ "que faltou no jogo, por favor comente abaixo e dê ok. Caso contrário é só cancelar.");
 		}
 		
 		Final.mensagemFinal(pontuacao);
